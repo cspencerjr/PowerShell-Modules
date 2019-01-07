@@ -1,0 +1,40 @@
+{
+  "COMPUTER": {
+    "SQLINSTANCE": "COMPUTER\\INSTANCE"
+  },
+  "DATABASE": {
+    "NAME": "DATABASE"
+  },
+  "GROUP": {
+    "GROUPNAME": "SQLADMIN"
+  },
+  "OPERATORS": {
+    "BACKUP": "email@address.com",
+    "ALERT": "email@address.com"
+  },
+  "MAIL": {
+    "SERVER": "mail.address.com",
+    "DOMAIN": "address.com"
+  },
+  "SCRIPTS": {
+    "DATABASE": [
+      "createdb.sql",
+      "dropdb.sql"
+    ],
+    "SCHEMA": [
+      "createtables.sql",
+      "createconstraints.sql",
+      "createindexes.sql"
+    ],
+    "PARAMETERS": {
+      "createdb.sql": {
+        "DBNAME": "DATABASE",
+        "DATAPATH": "<drive>:<path>",
+        "LOGPATH": "<drive>:<path>"
+      },
+      "dropdb.sql": {
+        "DBNAME": "DATABASE"
+      }
+    }
+  }
+}
